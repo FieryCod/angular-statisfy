@@ -9,7 +9,6 @@
     "scripts": {},
     "dependencies": {
         "cheerio": "^1.0.0-rc.2",
-        "mkdirp": "^0.5.1",
         "puppeteer": "^0.11.0"
     },
     "devDependencies": {
