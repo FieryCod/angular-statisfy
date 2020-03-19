@@ -62,6 +62,8 @@ module.exports = {
                         try {
                             const page = await browser.newPage();
                             await page.goto(fullRoute);
+                            await page.waitFor(1000);
+
                             html = await page.evaluate(() => document.documentElement.outerHTML);
                             console.log(`\t[fn Statisfy#generateStaticHTML] Route scrapped succesfully. Killing route!`);
                             await page.close();
